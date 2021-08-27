@@ -1,0 +1,64 @@
+<h2>MANTENIMIENTO USUARIO</h2>
+<section>
+  <div class="example-button-row">
+    <button
+      mat-flat-button
+      class="button-amarillo"
+      matTooltip="AGREGAR"
+      (click)="addUsuario()"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+  </div>
+</section>
+<br>
+
+    <div class="mat-elevation-z8">
+        <mat-table [dataSource]="dataSource" matSort>
+            <ng-container matColumnDef="nombre">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> NOMBRE </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.nombre}} </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="apellido">
+              <mat-header-cell *matHeaderCellDef mat-sort-header> APELLIDO </mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.apellido}} </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="edad">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> EDAD </mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.edad }} </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="sexoDescripcion">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> SEXO </mat-header-cell>
+                <mat-cell *matCellDef="let element">{{ element.sexo.nombre}} </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="accion">
+                <mat-header-cell *matHeaderCellDef> Acción </mat-header-cell>
+                <mat-cell *matCellDef="let element">
+                    <mat-icon
+                      class="table-btn-editar"
+                      matTooltip="Editar"
+                      (click)="editUsuario(element.id)"
+                      >edit</mat-icon
+                    > 
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <mat-icon
+                      class="table-btn-delete"
+                      matTooltip="Borrar"
+                      (click)="eliminarUsuario(element)"
+                      >delete</mat-icon
+                    >  
+                </mat-cell>
+   
+            </ng-container>
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+          <div *ngIf="loadingTable" class="container-spinner-loading">
+            <mat-progress-spinner color="primary" mode="indeterminate">
+            </mat-progress-spinner>
+          </div>
+          <mat-paginator [pageSizeOptions]="[10, 25, 50, 100]" showFirstLastButtons>
+        </mat-paginator>
+    </div>
+    <br>  
+    <br>

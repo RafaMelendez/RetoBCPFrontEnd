@@ -1,0 +1,24 @@
+{
+  "sexo": [
+    {
+      "id": 1,
+      "nombre": "Masculino"
+    },
+    {
+      "id": 2,
+      "nombre": "Femenino"
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nombre": "leonel",
+      "apellido": "lopez",
+      "sexo": {
+        "id": 1,
+        "nombre": "Masculino"
+      },
+      "edad": "30"
+    }
+  ]
+}

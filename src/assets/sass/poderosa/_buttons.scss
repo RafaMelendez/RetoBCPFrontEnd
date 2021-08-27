@@ -1,0 +1,33 @@
+//button Menu
+.button-amarillo {
+  margin: 0px 20px 0px 0 !important;
+  background-color: #d7a312;
+  color: white;
+}
+  .button-amarillo:hover {background-color: #ffc107}
+
+  .button-amarillo:active {
+    background-color: #ffc107;
+    // box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+.btn-flex-custom {
+  margin-left: .5rem !important;
+  margin-bottom: 1.4rem !important;
+  margin-top: .3rem !important;
+}
+//button en tablas
+.table-btn-delete {
+  color: #f44336;
+  cursor: pointer;
+}
+.table-btn-editar {
+  color: #d7a312;
+  cursor: pointer;
+}
+
+.forze-alight-left {
+  position: absolute;
+  left: .1rem;
+}

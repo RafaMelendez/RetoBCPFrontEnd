@@ -1,0 +1,30 @@
+// mat-checkbox{
+//     color: yellow !important;
+//     background-color: yellowgreen !important;
+// }
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background,
+.mat-accent .mat-pseudo-checkbox-checked,
+.mat-accent .mat-pseudo-checkbox-indeterminate,
+.mat-pseudo-checkbox-checked,
+.mat-pseudo-checkbox-indeterminate {
+  background-color: #3f51b5 !important; /* Red background for example */
+}
+
+
+mat-checkbox {
+  color: #ffc107;
+  &.mat-checkbox-focused{
+      .mat-ink-ripple{
+          background-color: rgba($pod-color-hover, .26);
+      }
+  }
+}
+
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background, .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background: transparent;
+}
+.mat-checkbox .mat-checkbox-frame {
+  border-color: $pod-color-hover;
+  border-width: 1px;
+}

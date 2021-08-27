@@ -1,0 +1,48 @@
+// Escribir estilos genericos
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  background-color: #eee;
+}
+.container {
+  display: flex;
+}
+.button-amarillo {
+  margin: 0px 20px 0px 0 !important;
+  background-color: #d7a312;
+  color: white;
+}
+//
+.material-icons.md-10 {
+  font-size: 20px;
+  color: #d7a312 !important;
+}
+
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+
+.message-validation {
+  font-size: 75%;
+}

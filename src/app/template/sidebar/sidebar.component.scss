@@ -1,0 +1,30 @@
+:host {
+    .mat-icon {
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+    .profile-card {
+      text-align: center;
+      padding: 0 20px 20px 20px;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+  // .is-active {
+  //   background-color:#fff1c9;
+  // }
+  .arrow_menus{
+    margin-left: auto;
+    // font-size: 16px;
+  }
+  mat-list-item{
+    font-size: 12px !important;
+  }
+  .submenu1{
+  font-size: 6px;
+  margin: 0px 5px 0px 0px;
+}
